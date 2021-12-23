@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Room Reservation and pizza delivery</title>
+</head>
+
+<body>
+	<!-- navigation bar -->
+	<table width="100%">
+		<tr>
+			<td width="10%"></td>
+			<td align="center">
+				<nav>
+					<a href="home.html">Home</a> |
+					<a href="job.html">Job</a> |
+					<a href="feedback.html">Feedback</a> |
+					<a href="#reservation">Reservation</a> |
+					<a href="#pizza">Pizza Delivery</a>
+				</nav>
+			</td>
+			<td width="10%"></td>
+		</tr>
+	</table>
+	<!-- main content goes here -->
+	<table width="100%">
+		<tr>
+			<td width="10%"></td>
+			<hr size="1" color="skyblue">
+			<td>
+				<main>
+					<h1 id="reservation">Reservation Request</h1>
+					<form>
+						<fieldset>
+							<legend>
+								<b>
+									<font color="blue">
+										General Information
+									</font>
+								</b>
+							</legend>
+							<table>
+								<tr>
+									<td>
+										<label for="date">Arrival date: </label>
+									</td>
+									<td>
+										<input type="date" name="date">
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label for="nights">Nights: </label>
+									</td>
+									<td>
+										<input type="number" min="1" name="nights">
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label for="adults">Adults: </label>
+									</td>
+									<td>
+										<select name="adults">
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+										</select>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label for="children">Children: </label>
+									</td>
+									<td>
+										<select name="adults">
+											<option value="0">0</option>
+											<option value="1">1</option>
+											<option value="2">2</option>
+											<option value="3">3</option>
+											<option value="4">4</option>
+										</select>
+									</td>
+								</tr>
+							</table>
+						</fieldset>
+						<fieldset>
+							<legend><b>
+									<font color="blue">Preference</font>
+								</b></legend>
+							<div>
+								<label for="room_type">Room Type</label>
+								<input type="radio" name="room_type" checked> Standard 
+								<input type="radio" name="room_type"> Business
+								<input type="radio" name="room_type"> Suite
+							</div>
+							<div>
+								Bed Type:
+								<input type="radio" name="bed_type" checked> King 
+								<input type="radio" name="bed_type"> Double Double
+							</div>
+							<div>
+								<input type="checkbox" name="smoke"> Smoking
+							</div>
+						</fieldset>
+						<fieldset>
+							<legend><b>
+									<font color="blue">Contact Information</font>
+								</b></legend>
+							<table>
+								<tr>
+									<td>
+										<label for="name">Name: </label>
+									</td>
+									<td>
+										<input type="text" required>
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label for="email">Email: </label>
+									</td>
+									<td>
+										<input type="email">
+									</td>
+								</tr>
+								<tr>
+									<td>
+										<label for="phone">Phone: </label>
+									</td>
+									<td>
+										<input type="tel" name="phone" pattern="[0-9]{2}-[0-9]{3}-[0-9]{4}">
+									</td>
+								</tr>
+							</table>
+						</fieldset>
+						<input type="submit" value="Submit Reservation">
+						<input type="reset" value="clear">
+					</form>
+					<h1 id="pizza" align="center">Pizza Delivery</h1>
+					<h2 align="center">Online Order Form</h2>
+					<form>
+						<table align="center">
+							<tr align="right">
+								<td>
+									*Name: <input type="text" name="name" required>
+								</td>
+								<td>
+									*Tel: <input type="tel" name="tel"  pattern="[0-9]{2}-[0-9]{3}-[0-9]{4}" required>
+								</td>
+							</tr>
+							<tr align="right">
+								<td>
+									*Address: <input type="text" name="name" required>
+								</td>
+								<td>
+									*Email: <input type="email" required>
+								</td>
+							</tr>
+							<tr align="right">
+								<td>
+									*Town city: <input type="text" name="town" required>
+								</td>
+								<td></td>
+							</tr>
+							<tr align="right">
+								<td>
+									*Postcode: <input type="text" name="name" required>
+								</td>
+							</tr>
+							<tr align="center">
+								<td colspan="2">
+									<br>
+									* required fields
+								</td>
+							</tr>
+						</table>
+						<table align="center">
+							<tr valign="top">
+								<td>
+									<fieldset>
+										<legend>Topping</legend>
+										<div><input type="radio" name="topping">Margherita</div>
+										<div>
+											<input type="radio" name="topping"> Four Seasons
+										</div>
+										<div>
+											<input type="radio" name="topping"> Meat Feast
+										</div>
+									</fieldset>
+								</td>
+								<td>
+									<fieldset>
+										<legend>Size</legend>
+										<div><input type="radio" name="size"> Small</div>
+										<div>
+											<input type="radio" name="size"> Medium
+										</div>
+										<div>
+											<input type="radio" name="size"> Large
+										</div>
+									</fieldset>
+								</td>
+								<td>
+									<fieldset>
+										<legend>Extras</legend>
+										<div><input type="checkbox" name="extra1"> Mushrooms</div>
+										<div>
+											<input type="checkbox" name="extra2"> Green peppers
+										</div>
+										<div>
+											<input type="checkbox" name="extra3"> Anchovies
+										</div>
+										<div>
+											<input type="checkbox" name="extra4"> Extra cheese
+										</div>
+									</fieldset>
+								</td>
+							</tr>
+						</table>
+						<table align="center">
+							<tr>
+								<td>
+									Preffered delivery time:
+								</td>
+								<td>
+									<input type="time" name="delivery_time">
+								</td>
+							</tr>
+							<tr valign="top">
+								<td>
+									Delivery instructions:
+								</td>
+								<td>
+									<textarea name="address" cols="20" rows="2"></textarea>
+								</td>
+							</tr>
+							<tr align="center">
+								<td colspan="2">
+									<input type="submit" value="Submit order">
+								</td>
+							</tr>
+						</table>
+					</form>
+				</main>
+			</td>
+			<td width="10%"></td>
+		</tr>
+	</table>
+</body>
+
+</html>

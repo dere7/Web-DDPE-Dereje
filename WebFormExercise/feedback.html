@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Feedback</title>
+</head>
+
+<body>
+	<!-- navigation bar -->
+	<table width="100%">
+		<tr>
+			<td width="10%"></td>
+			<td align="center">
+				<nav>
+					<a href="home.html">Home</a> |
+					<a href="job.html">Job</a> |
+					<a href="feedback.html">Feedback</a> |
+					<a href="reservation.html#reservation">Reservation</a> | 
+					<a href="reservation.html#pizza">Pizza Delivery</a>
+				</nav>
+			</td>
+			<td width="10%"></td>
+		</tr>
+	</table>
+	<!-- main content goes here -->
+	<table width="100%">
+		<tr>
+			<td width="10%"></td>
+			<hr size="1" color="skyblue">
+			<td>
+				<main>
+					<h1>Feedback Form</h1>
+					<form>
+						<div>
+							<label for="name">Name: </label>
+							<input type="text" name="name">
+						</div>
+						<div>
+							<label for="email">Email: </label>
+							<input type="email" name="email">
+						</div>
+						<div>
+							<label for="reaction">
+								Please check all the emotions that apply to you:
+							</label>
+							<ul>
+								<li>Angry<input type="checkbox" name="angry"></li>
+								<li>Sad<input type="checkbox" name="sad"></li>
+								<li>Happy<input type="checkbox" name="happy"></li>
+								<li>Ambivalent<input type="checkbox" name="ambivalent"></li>
+							</ul>
+						</div>
+						<div>
+							<label for="satsification">
+								How satisfied were you with our service?
+							</label>
+							<ul>
+								<li>Very satisfied<input type="radio" name="satsification"></li>
+								<li>Satisfied<input type="radio" name="satsification"></li>
+								<li>Didn't care<input type="radio" name="satsification"></li>
+								<li>Dissatisfied<input type="radio" name="satsification"></li>
+								<li>Very dissatisfied<input type="radio" name="satsification"></li>
+							</ul>
+						</div>
+						<div>
+							<label for="comment">Further comment:</label>
+							<textarea name="comment" id="" cols="20" rows="2"></textarea>
+						</div>
+						<input type="submit" value="submit">
+					</form>
+				</main>
+			</td>
+			<td width="10%"></td>
+		</tr>
+	</table>
+</body>
+
+</html>
