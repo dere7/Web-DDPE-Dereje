@@ -2,132 +2,153 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <title>Life Hacks Home</title>
+	<meta charset="UTF-8" />
+	<title>Life Hacks Home</title>
+	<style>
+		#message {
+			background-color: rgb(102, 194, 102);
+			border: 1px solid green;
+			color: rgb(2, 32, 2);
+			border-radius: 5px;
+			display: none;
+			width: 250px;
+			font-family: 'Courier New', Courier, monospace;
+			padding: 5px 10px;
+			margin: 5px;
+		}
+
+		.focused {
+			border-radius: 5px;
+			outline: 3px double tomato;
+			border: 1px solid red;
+		}
+	</style>
 </head>
 
 <body>
-    <table width="100%">
-        <tr>
-            <td width="10%"></td>
-            <td>
-                <img src="/Life Hacks/resources/images/logo_gold.png" alt="life hacks logo" height="70" />
-            </td>
-            <td align="right">
-                <a href="">Podocast</a> | <a href="">Articles</a> |
-                <a href="">Ideas</a> | <a href="">About Us</a> |
-                <a href="frame.html">Frame</a> | <a href="auth/signin.html">Sign In</a> | 
-                <a href="auth/register.html">Register</a>
-            </td>
-            <td width="10%"></td>
-        </tr>
-    </table>
-    <hr />
-    <table width="100%" cellpadding="10">
-        <tr>
-            <td width="10%"></td>
-            <td align="right" colspan="2"><a href="#">Go To bottom</a></td>
-            <td width="10%"></td>
-        </tr>
-        <tr>
-            <td width="10%"></td>
-            <td width="60%">
-                <!-- main content -->
-                <h1>Eric Hoffer and the Power of Self-Education</h1>
-                <img src="/Life Hacks/resources/images/banners/life1.jpg" alt="man watching sunset" width="100%" />
-                <p>
-                    I recently read The True Believer by Eric Hoffer. It’s a book about
-                    how mass movements evolve. With a lot of historical examples, the
-                    book explains the patterns and common threads among them. It’s an
-                    insightful book and reading it was a great learning experience for
-                    me.
-                </p>
-                <table>
-                    <tr>
-                        <td valign="top">
-                            <br />
-                            <img src="noImage.png" alt="The True Believer book cover" />
-                        </td>
-                        <td>
-                            <p>
-                                What I’d like to share with you here is not the content of the
-                                book, though. Instead, I’d like to share with you about the
-                                author.
-                            </p>
-                            <p>
-                                You see, I didn’t know about Eric Hoffer before. But I
-                                imagined he must be a famous professor from a well-known
-                                university. I mean, what else could explain the depth of his
-                                insights? <cite>The True Believer</cite> is an influential book. Here is
-                                how <a href="https://en.wikipedia.org/wiki/Eric_Hoffer">Wikipedia</a> put it...
-                                <a href="https://en.wikipedia.org/wiki/Eric_Hoffer">read more</a>
-                            </p>
-                        </td>
-                    </tr>
-                </table>
-                <hr />
-                
-                <h3>New Podocast</h3>
-                <h1>Jack Ma - How I Overcame Failure</h1>
-                <audio controls>
-                    <source src="/Life Hacks/resources/audio/Jack Ma - How I Overcame Failure.mp3" />
-                    Audio is not supported on your browser
-                </audio>
-                
-                <hr />
-                
-                <h3>Pick of The Week</h3>
-                <h1>24 Hours A Day</h1>
-                <video controls width="100%">
-                    <source src="/Life Hacks/resources/video/24_HOURS.mp4" />
-                    Video is not supported on your browser
-                </video>
-            </td>
+	<table width="100%">
+		<tr>
+			<td width="10%"></td>
+			<td>
+				<img src="/resources/images/logo_gold.png" alt="life hacks logo" height="70" />
+			</td>
+			<td align="right">
+				<a href="">Podocast</a> | <a href="">Articles</a> |
+				<a href="">Ideas</a> | <a href="">About Us</a> |
+				<a href="frame.html">Frame</a> | <a href="auth/signin.html">Sign In</a> |
+				<a href="auth/register.html">Register</a>
+			</td>
+			<td width="10%"></td>
+		</tr>
+	</table>
+	<hr />
+	<table width="100%" cellpadding="10">
+		<tr>
+			<td width="10%"></td>
+			<td align="right" colspan="2"><a href="#">Go To bottom</a></td>
+			<td width="10%"></td>
+		</tr>
+		<tr>
+			<td width="10%"></td>
+			<td width="60%">
+				<!-- main content -->
+				<h1>Eric Hoffer and the Power of Self-Education</h1>
+				<img src="/resources/images/banners/life1.jpg" alt="man watching sunset" width="100%" />
+				<p>
+					I recently read The True Believer by Eric Hoffer. It's a book about
+					how mass movements evolve. With a lot of historical examples, the
+					book explains the patterns and common threads among them. It's an
+					insightful book and reading it was a great learning experience for
+					me.
+				</p>
+				<table>
+					<tr>
+						<td valign="top">
+							<br />
+							<img src="noImage.png" alt="The True Believer book cover" />
+						</td>
+						<td>
+							<p>
+								What I'd like to share with you here is not the content of the
+								book, though. Instead, I'd like to share with you about the
+								author.
+							</p>
+							<p>
+								You see, I didn't know about Eric Hoffer before. But I
+								imagined he must be a famous professor from a well-known
+								university. I mean, what else could explain the depth of his
+								insights? <cite>The True Believer</cite> is an influential book. Here is
+								how <a href="https://en.wikipedia.org/wiki/Eric_Hoffer">Wikipedia</a> put it...
+								<a href="https://en.wikipedia.org/wiki/Eric_Hoffer">read more</a>
+							</p>
+						</td>
+					</tr>
+				</table>
+				<hr />
 
-            <td width="20%" valign="top">
-                <div>
-                    <h2>Recent Posts</h2>
-                    <ul>
-                        <li>
-                            <h3>Articles</h3>
-                            <ul>
-                                <li>
-                                    The Importance of Goals, Especially During Difficult Times
-                                </li>
-                                <li>5 Steps to Discovering Your Life Purpose In 2022!</li>
-                            </ul>
-                        </li>
+				<h3>New Podocast</h3>
+				<h1>Jack Ma - How I Overcame Failure</h1>
+				<audio controls>
+					<source src="/resources/audio/Jack Ma - How I Overcame Failure.mp3" />
+					Audio is not supported on your browser
+				</audio>
 
-                        <li>
-                            <h3>Ideas</h3>
-                            <ul>
-                                <li>10 Books to Read in The Fall</li>
-                                <li>Top Web Development Projects Ideas</li>
-                            </ul>
-                        </li>
-                    </ul>
+				<hr />
 
-					<details>
-						<summary>
-							<b>Most Viewed Articls</b>
-						</summary>
-						<ol type="I">
-							<li>
-								Instant Gratification Is Stopping You From Reaching Your Goals!
-							</li>
-							<li>Stop Juggling Between Work And Life IP Project Winners</li>
-						</ol>
-					</details>
+				<h3>Pick of The Week</h3>
+				<h1>24 Hours A Day</h1>
+				<video controls width="100%" onplay="handlePlay()" onpause="handlePause()">
+					<source src="/resources/video/24_HOURS.mp4" />
+					Video is not supported on your browser
+				</video>
+				<div id="message"></div>
+			</td>
 
-					<svg width="100%" height="100">
-						<rect width="100%" height="100%" rx="15" ry="15" fill="dodgerblue"/>
-						<text x="50%" y="57%" fill="white" font-size="26"  text-anchor="middle">
-							SVG is C👀L 😎
+			<td width="20%" valign="top">
+				<div>
+					<svg width="250" height="200">
+						<rect width="100%" height="100%" fill="purple" />
+						<circle cx="100" cy="100" r="85" fill="tomato" />
+						<text x="50%" y="123" fill="white" font-size="26" text-anchor="middle">
+							KEEP CALM 🌊
 						</text>
 					</svg>
-						
-                    <h2>IP Project Winners</h2>
-                    <pre>
+					<details>
+						<summary>
+							<b><big>Recent Posts</big></b>
+						</summary>
+
+						<ul>
+							<li>
+								<h3>Articles</h3>
+								<ul>
+									<li>
+										The Importance of Goals, Especially During Difficult Times
+									</li>
+									<li>5 Steps to Discovering Your Life Purpose In 2022!</li>
+								</ul>
+							</li>
+
+							<li>
+								<h3>Ideas</h3>
+								<ul>
+									<li>10 Books to Read in The Fall</li>
+									<li>Top Web Development Projects Ideas</li>
+								</ul>
+							</li>
+						</ul>
+					</details>
+
+					<h2>Most Viewed Articls</h2>
+					<ol type="I">
+						<li>
+							Instant Gratification Is Stopping You From Reaching Your Goals!
+						</li>
+						<li>Stop Juggling Between Work And Life IP Project Winners</li>
+					</ol>
+
+					<h2>IP Project Winners</h2>
+					<pre>
 ---------------------------------
 Rank    Award 
 ---------------------------------
@@ -136,31 +157,46 @@ Second  5GB Mobile Data
 Third   1GB Mobile Data 
 ---------------------------------- 
                 </pre>
-                </div>
-            </td>
-            <td width="10%"></td>
-        </tr>
-        <tr>
-            <td width="10%"></td>
-            <td colspan="2"> <hr /> </td>
-            <td width="10%"></td>
-        </tr>
-        <tr>
-            <td width="10%"></td>
-            <td>Follow Us On: <a href="">Facebook</a></td>
-            <td align="right">
-                <a href="">Privacy</a> | <a href="">Term of Use</a>
-            </td>
-            <td width="10%"></td>
-        </tr>
-        <tr>
-            <td width="10%"></td>
-            <td colspan="2" align="center">
-                Copyright &copy; AASTU SEng 2021, All Rights Reserved
-            </td>
-            <td width="10%"></td>
-        </tr>
-    </table>
+				</div>
+			</td>
+			<td width="10%"></td>
+		</tr>
+		<tr>
+			<td width="10%"></td>
+			<td colspan="2">
+				<hr />
+			</td>
+			<td width="10%"></td>
+		</tr>
+		<tr>
+			<td width="10%"></td>
+			<td>Follow Us On: <a href="">Facebook</a></td>
+			<td align="right">
+				<a href="">Privacy</a> | <a href="">Term of Use</a>
+			</td>
+			<td width="10%"></td>
+		</tr>
+		<tr>
+			<td width="10%"></td>
+			<td colspan="2" align="center">
+				Copyright &copy; AASTU SEng 2021, All Rights Reserved
+			</td>
+			<td width="10%"></td>
+		</tr>
+	</table>
+	<script>
+		function handlePlay() {
+			msg = document.getElementById("message");
+			msg.style.display = "block"
+			msg.innerHTML = "The video is being played";
+		}
+
+		function handlePause() {
+			msg = document.getElementById("message");
+			msg.style.display = "none"
+		}
+
+	</script>
 </body>
 
 </html>
