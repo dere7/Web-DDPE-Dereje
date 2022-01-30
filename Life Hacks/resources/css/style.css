@@ -1,0 +1,53 @@
+body {
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+#message {
+  background-color: rgb(102, 194, 102);
+  border: 1px solid green;
+  color: rgb(2, 32, 2);
+  border-radius: 5px;
+  display: none;
+  width: 250px;
+  font-family: "Courier New", Courier, monospace;
+  padding: 5px 10px;
+  margin: 5px;
+}
+
+.focused {
+  border-radius: 5px;
+  outline: 3px double tomato;
+  border: 1px solid red;
+}
+.box {
+	margin: 10px;
+	padding: 20px;
+	background-color: #fafafa;
+	box-shadow: 3px 3px 7px #ddd;
+	border: 1px solid #ddd;
+	border-radius: 5px;
+	min-width: 500px;
+}
+
+.box button {
+	display: block;
+	margin: 5px;
+	padding: 5px 10px;
+	border-radius: 5px;
+	color: white;
+	text-transform: uppercase;
+	font-weight: bold;
+	border: 2px solid dodgerblue;
+	background-color: rgb(23, 110, 196);
+	transition-timing-function: ease;
+	transition-duration: 250ms;
+	transition-property: background-color;
+}
+.box button:hover {
+	opacity: .9;
+	color: rgb(23, 110, 196);
+	background-color: white;
+	transition-timing-function: ease;
+	transition-duration: 250ms;
+	transition-property: background-color;
+}

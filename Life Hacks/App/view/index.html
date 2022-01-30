@@ -4,25 +4,8 @@
 <head>
 	<meta charset="UTF-8" />
 	<title>Life Hacks Home</title>
-	<style>
-		#message {
-			background-color: rgb(102, 194, 102);
-			border: 1px solid green;
-			color: rgb(2, 32, 2);
-			border-radius: 5px;
-			display: none;
-			width: 250px;
-			font-family: 'Courier New', Courier, monospace;
-			padding: 5px 10px;
-			margin: 5px;
-		}
-
-		.focused {
-			border-radius: 5px;
-			outline: 3px double tomato;
-			border: 1px solid red;
-		}
-	</style>
+	<link rel="stylesheet" href="/resources/css/style.css">
+	<script src="/resources/js/index.js"></script>
 </head>
 
 <body>
@@ -50,10 +33,15 @@
 		</tr>
 		<tr>
 			<td width="10%"></td>
-			<td width="60%">
+			<td width="60%" id="parent">
 				<!-- main content -->
-				<h1>Eric Hoffer and the Power of Self-Education</h1>
-				<img src="/resources/images/banners/life1.jpg" alt="man watching sunset" width="100%" />
+				<h1 id="title">Eric Hoffer and the Power of Self-Education</h1>
+				<div class="box">
+					<button onclick="handleSwap()">Swap image and video</button>
+					<button onclick="handleRemove()">Remove audio</button>
+					<button onclick="handleAdd()">Add new Element</button>
+				</div>
+				<img id="image" src="/resources/images/banners/life1.jpg" alt="man watching sunset" width="100%" />
 				<p>
 					I recently read The True Believer by Eric Hoffer. It's a book about
 					how mass movements evolve. With a lot of historical examples, the
@@ -88,7 +76,7 @@
 
 				<h3>New Podocast</h3>
 				<h1>Jack Ma - How I Overcame Failure</h1>
-				<audio controls>
+				<audio controls id="audio">
 					<source src="/resources/audio/Jack Ma - How I Overcame Failure.mp3" />
 					Audio is not supported on your browser
 				</audio>
@@ -97,7 +85,7 @@
 
 				<h3>Pick of The Week</h3>
 				<h1>24 Hours A Day</h1>
-				<video controls width="100%" onplay="handlePlay()" onpause="handlePause()" onplaying="console.log('The videos is being played')">
+				<video controls width="100%" id="video" onplay="handlePlay()" onpause="handlePause()" onplaying="console.log('The videos is being played')">
 					<source src="/resources/video/24_HOURS.mp4" />
 					Video is not supported on your browser
 				</video>
