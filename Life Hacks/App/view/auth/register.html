@@ -4,6 +4,47 @@
 <head>
 	<meta charset="UTF-8" />
 	<title>Life Hacks Home</title>
+	<style>
+		#output-box {
+			width: 450px;
+			height: 200px;
+			margin: 10px;
+			padding: 20px;
+			background-color: #fafafa;
+			box-shadow: 3px 3px 7px #ddd;
+			border: 1px solid #ddd;
+			border-radius: 5px;
+			font-weight: bold;
+			font-size: 28px;
+			display: none;
+		}
+		#output-box span {
+			width: 45px;height: 15px;
+			border: 3px solid gray;
+			display: inline-block;
+		}
+	</style>
+	<script>
+		const inputObj = {};
+
+		function handleSumbit(e) {
+			inputObj.fullName = document.getElementById('fullName').value
+			inputObj.age = document.getElementById("age").value
+			inputObj.phone = document.getElementById("phone").value
+			inputObj.favColor = document.getElementById("favColor").value
+			displayData();
+			e.preventDefault()
+		}
+		function displayData() {
+			const outputBox = document.getElementById("output-box")
+			outputBox.style.display = "block"
+			outputBox.innerHTML = `Full Name: ${inputObj.fullName}
+				<br>Age: ${inputObj.age}
+				<br>Phone: ${inputObj.phone}
+				<br>Favorite Color: <span style="background-color: ${inputObj.favColor}"></span> [AirPlane]<br>`;
+			console.log(inputObj)
+		}
+	</script>
 </head>
 
 <body>
@@ -12,7 +53,7 @@
 			<td width="10%"></td>
 			<td>
 				<a href="../">
-					<img src="/resources/images/logo_gold.png"" alt=" life hacks logo" height="70" />
+					<img src="/resources/images/logo_gold.png" alt=" life hacks logo" height="70" />
 				</a>
 			</td>
 			<td align="right">
@@ -38,13 +79,13 @@
 				<h1>Register</h1>
 				<form>
 					<label for="fullName">Full Name</label><br>
-					<input type="text" maxlength="50" required size="50%"><br>
+					<input name="fullName" type="text" maxlength="50" required size="50%" id="fullName"><br>
 					<label for="phone">Phone</label><br>
-					<input type="tel" required size="50%"><br>
+					<input name="phone" type="tel" required size="50%" id="phone"><br>
 					<label for="age">age</label><br>
-					<input type="number" min="18" max="100"><br>
+					<input name="age" id="age" type="number" min="18" max="100"><br>
 					<label for="favColor">Favorite Color</label>
-					<input type="color"><br>
+					<input name="favColor" id="favColor" type="color"><br>
 
 					<label for="birthDay">Birth Date</label><br>
 					<input type="date"><br>
@@ -88,9 +129,12 @@
 					<label for="bio">Describe Yourself</label> <br>
 					<textarea name="bio" cols="30" rows="10"></textarea>
 					<br>
-					<input type="submit">
+					<input type="submit" onclick="handleSumbit(event)">
 					<input type="reset">
 				</form>
+				<p>Submit the form to see the output</p>
+				<div id="output-box">
+				</div>
 			</td>
 
 			<td width="20%" valign="top">
