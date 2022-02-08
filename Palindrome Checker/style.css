@@ -1,0 +1,104 @@
+body {
+	margin: 0;
+	background-color: #ddd;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+* {
+	box-sizing: border-box;
+}
+#page {
+	min-width: 400px;
+	min-height: 250px;
+	margin: 20px auto;
+	padding: 15px;
+	border-radius: 10px;
+	box-shadow: 3px 3px 5px #ccc, -3px -3px 5px #ccc;
+	background-color: white;
+}
+
+h1, h2, ul {
+	padding: auto;
+	color: red;
+}
+
+button {
+	margin: 0 5px;
+	padding: 5px 5px;
+	border: 1px solid #aaa;
+}
+
+h1 {
+	margin-bottom: 0;
+}
+h2 {
+	margin-top: 0;
+}
+.btns {
+	display: flex;
+	justify-content: space-between;
+}
+
+button {
+	padding: 5px 10px;
+	border-radius: 5px;
+	border: 1px solid rgb(197, 224, 251);
+	background-color: dodgerblue;	
+	color: white;
+	font-weight: bold;
+	text-transform: uppercase;
+	letter-spacing: 2px;
+	transition-property: box-shadow, background-color;
+	transition-duration: 250ms;
+	transition-timing-function: ease-out;
+}
+
+button:hover {
+	background-color: rgb(14, 130, 246);
+	box-shadow: 3px 3px 6px #ccc;
+	transition-duration: 250ms;
+}
+
+h1 {
+	margin-bottom: 15px;
+	padding-bottom: 5px;
+	margin-top: 0;
+	text-align: center;
+	border-bottom: 2px solid dodgerblue;
+	color: dodgerblue;
+}
+
+
+#page input{
+	display: block;
+	width: 100%;
+	border: 2px solid #ccc;
+	border-radius: 5px;
+	padding: 5px;
+}
+#page input:focus {
+	outline: 2px solid dodgerblue;
+}
+
+#output-box {
+	width: 100%;
+	height: 200px;
+	margin-top: 10px;
+	border-radius: 5px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	background-color: #f3f3f3;
+	font-size: 24px;
+	font-weight: bold;
+	box-shadow: inset 3px 3px 3px #eee;
+}
+
+#output-box span {
+	color: dodgerblue;
+	font-family: cascadia code, consolas, monospace;
+}

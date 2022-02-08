@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Palindrome Checker</title>
+	<link rel="stylesheet" href="style.css">
+	<script>
+		/**
+		 * A palindrome is a word that reads the same forward and backwards
+		 * e.g. Eye, Racecar, `A Man, A Plan, A Canal - Panama!`
+		 */
+		function isPalindrome(str) {
+			let alphanumericOnly = str.toLowerCase().match(/[a-z0-9]/g)
+			if (!alphanumericOnly) return true
+			let string = alphanumericOnly.join('')
+			alphanumericOnly = alphanumericOnly.reverse().join('')
+			return string === alphanumericOnly
+		}
+
+		function printOutput() {
+			const input = document.getElementById('str')
+			const output = document.getElementById('output-box')
+			const checkPalindrome = isPalindrome(input.value)
+			outputStr = `Entered String: <span> ${input.value}</span>
+				<br>Is Palindrome: <span> ${checkPalindrome ? 'YES✅' : 'NO❌'}</span`
+			output.innerHTML = outputStr
+		}
+
+		function handleClick() {
+			const input = document.getElementById('str')
+			input.value = ''
+		}
+
+	</script>
+</head>
+
+<body>
+	<div id="page">
+		<h1>Palindrome Checker</h1>
+		<div class="btns">
+			<input type="text" id="str" placeholder="enter a string" oninput="printOutput()">
+			<button onclick="handleClick()">reset</button>
+		</div>
+		<div id="output-box">
+			Enter something
+		</div>
+	</div>
+</body>
+
+</html>
