@@ -8,6 +8,11 @@
 	<title>Palindrome Checker</title>
 	<link rel="stylesheet" href="style.css">
 	<script>
+		// custom method for string
+		String.prototype.reverse = function () {
+			return this.split('').reverse().join('')
+		}
+
 		/**
 		 * A palindrome is a word that reads the same forward and backwards
 		 * e.g. Eye, Racecar, `A Man, A Plan, A Canal - Panama!`

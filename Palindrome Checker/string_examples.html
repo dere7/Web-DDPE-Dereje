@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8"> 
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Demo</title>
+</head>
+
+<body>
+	<div id="output"></div>
+	<script>
+		// create : template literal, single and double quite
+		const str = "Internet programming I and Networking"
+		const output = document.getElementById("output")
+		output.innerHTML = `
+			String : ${str }<br> 
+			Length : ${str.length } <br>
+		 	Char at 3: ${str.charAt(3)} <br>
+		 	Str[3]: ${str[3]} <br>
+			Concat 'test': ${str.concat('test', '!')}<br>
+			Concat 'test' using +: ${str + 'test' + '!'}<br>
+			Index of 't': ${str.indexOf('t')} <br>
+			Match 'net': ${str.match(/net/gi)} <br>
+			Search 'net': ${str.search(/net/i)} <br>
+			Replace space with _ : ${str.replace(' ', '_')} <br>
+			Replace All space with _ : ${str.replaceAll(' ', '_')} <br>
+			Slice last 10 chars: ${str.slice(-10, str.length)} <br>
+			Substring between 5 and 8: ${str.substring(5, 8)} <br>
+			Uppercase: ${str.toUpperCase()} <br>
+			Lowercase: ${str.toLowerCase()} <br>
+		 `
+
+	</script>
+</body>
+
+</html>
