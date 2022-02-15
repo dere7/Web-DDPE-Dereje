@@ -11,7 +11,10 @@
 <body>
 	<div id="output"></div>
 	<script>
-		// create : template literal, single and double quite
+		// custom method for string
+		String.prototype.reverse = function () {
+			return this.split('').reverse().join('')
+		}
 		const str = "Internet programming I and Networking"
 		const output = document.getElementById("output")
 		output.innerHTML = `
@@ -30,8 +33,8 @@
 			Substring between 5 and 8: ${str.substring(5, 8)} <br>
 			Uppercase: ${str.toUpperCase()} <br>
 			Lowercase: ${str.toLowerCase()} <br>
-		 `
-
+			<mark>Reversed: ${str.reverse()}</mark>
+			`
 	</script>
 </body>
 
